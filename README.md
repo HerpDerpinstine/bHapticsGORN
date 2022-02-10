@@ -67,7 +67,7 @@ For example if you wanted to replace the ``HeartBeat`` you would rename it to ``
 5) ``VelocityScaleMax`` equals ``2``  
 6) ``IntensityScale`` equals ``1.2`` 
 
-The  Algorithm would read as:  
+- The  Algorithm would read as:  
 ``100 * ( ClampMinMax( ( 256 * 0.001 ), 0, 2  ) * 1.2 )``
 
 1) ``256`` multiplied by ``0.001`` equals ``0.256``
@@ -75,7 +75,7 @@ The  Algorithm would read as:
 3) ``0.256`` multiplied by ``1.2`` equals ``0.3072``
 4) ``100`` multiplied by ``0.3072`` equals ``30.72``
 
-Which means in this example the Haptic Pattern would play at an Intensity of ``30``.
+- Which means in this example the Haptic Pattern would play at an Intensity of ``30``.
 
 
 ---
