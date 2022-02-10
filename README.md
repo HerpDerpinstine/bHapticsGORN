@@ -1,3 +1,4 @@
+
 # GbHapticsIntegration
 Mod for GORN using MelonLoader  
 Special Thanks to [bHaptics](https://www.bhaptics.com) for making the bHaptics Gear as well as supporting me and this mod wherever needed! :D
@@ -50,6 +51,32 @@ For example if you wanted to replace the ``HeartBeat`` on the ``Vest`` you would
 
 2) Rename the ``.tact`` file to the name of the Config file of the Pattern you would like to replace.  
 For example if you wanted to replace the ``HeartBeat`` you would rename it to ``HeartBeat.tact``
+
+---
+
+### VELOCITY SCALING:
+
+- The Algorithm for Velocity Scaling works as follows:  
+``PatternIntensity * ( ClampMinMax( ( ImpactVelocity.magnitude * VelocityScale ), VelocityScaleMin, VelocityScaleMax  ) * IntensityScale )``
+
+- For example if:  
+1) ``PatternIntensity`` equals ``100``  
+2) ``ImpactVelocity.magnitude`` equals ``256``  
+3) ``VelocityScale`` equals ``0.001``  
+4) ``VelocityScaleMin`` equals ``0``  
+5) ``VelocityScaleMax`` equals ``2``  
+6) ``IntensityScale`` equals ``1.2`` 
+
+The  Algorithm would read as:  
+``100 * ( ClampMinMax( ( 256 * 0.001 ), 0, 2  ) * 1.2 )``
+
+1) ``256`` multiplied by ``0.001`` equals ``0.256``
+2) ``0.256`` clamped between ``0`` to ``2`` equals ``0.256``
+3) ``0.256`` multiplied by ``1.2`` equals ``0.3072``
+4) ``100`` multiplied by ``0.3072`` equals ``30.72``
+
+Which means in this example the Haptic Pattern would play at an Intensity of ``30``.
+
 
 ---
 
