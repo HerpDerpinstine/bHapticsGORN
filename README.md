@@ -44,9 +44,11 @@ Special Thanks to [bHaptics](https://www.bhaptics.com) for making the bHaptics G
 
 - This Mod allows the user to load their own Custom Haptic Patterns.
 - You can create Custom Haptic Patterns by exporting the ``.tact`` file from the [bHaptics Designer](https://designer.bhaptics.com/).
-- Place the ``.tact`` file next to the Config file of the Pattern you would like to replace.
+
+1) Place the ``.tact`` file next to the Config file of the Pattern you would like to replace.  
 For example if you wanted to replace the ``HeartBeat`` on the ``Vest`` you would place it in ``UserData\bHaptics\Player\Vest``
-- Rename the ``.tact`` file to the name of the Config file of the Pattern you would like to replace.
+
+2) Rename the ``.tact`` file to the name of the Config file of the Pattern you would like to replace.  
 For example if you wanted to replace the ``HeartBeat`` you would rename it to ``HeartBeat.tact``
 
 ---
