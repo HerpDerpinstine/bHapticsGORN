@@ -33,7 +33,6 @@ namespace GbHapticsIntegration
                     json = Properties.Resources.ResourceManager.GetString(DefaultResourcesName);
                     if (string.IsNullOrEmpty(json))
                         throw new Exception($"Failed to Read Default JSON ({DefaultResourcesName}) from Resources!");
-                    MelonLogger.Msg(json);
                 }
 
                 bHaptics.RegisterFeedbackFromTactFile(Identifier, json);
