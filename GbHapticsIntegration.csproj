@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\ILMerge.3.0.41\build\ILMerge.props" Condition="Exists('packages\ILMerge.3.0.41\build\ILMerge.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C33921DC-5778-4EEC-A2D0-E0AE522CC701}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GbHapticsIntegration</RootNamespace>
+    <AssemblyName>GbHapticsIntegration</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>Libs\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MelonLoader">
+      <HintPath>Libs\MelonLoader.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="UnityEngine">
+      <HintPath>Libs\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>Libs\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>Libs\UnityEngine.PhysicsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Debug.cs" />
+    <Compile Include="Hooks\Bow.cs" />
+    <Compile Include="Hooks\CrossbowCaestus.cs" />
+    <Compile Include="Hooks\DamagerRigidbody.cs" />
+    <Compile Include="Hooks\Grapple.cs" />
+    <Compile Include="Hooks\Gun.cs" />
+    <Compile Include="Managers\Tact.cs" />
+    <Compile Include="Setup\Devices\Head2.cs" />
+    <Compile Include="Setup\Devices\Vest.cs" />
+    <Compile Include="Setup\Devices\Vest2.cs" />
+    <Compile Include="Setup\EffectBase.cs" />
+    <Compile Include="Setup\Effects\Blunt3.cs" />
+    <Compile Include="Setup\Effects\Blunt2.cs" />
+    <Compile Include="Setup\Effects\Blunt.cs" />
+    <Compile Include="Setup\Effects\Cut.cs" />
+    <Compile Include="Setup\Devices\Arm.cs" />
+    <Compile Include="Setup\Devices\Arm2.cs" />
+    <Compile Include="Setup\Devices\Hand.cs" />
+    <Compile Include="Setup\Devices\Hand2.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="Hooks\DamageRelay.cs" />
+    <Compile Include="Hooks\GrabHand.cs" />
+    <Compile Include="Hooks\PlayerDamageRelay.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="Managers\Enemy.cs" />
+    <Compile Include="Managers\Player.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Config.cs" />
+    <Compile Include="Properties\BuildInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\Devices\Head.cs" />
+    <Compile Include="Setup\Effects\DrawString.cs" />
+    <Compile Include="Setup\Effects\PlayerDamage.cs" />
+    <Compile Include="Setup\Effects\Shoot.cs" />
+    <Compile Include="Setup\Effects\ShootString.cs" />
+    <Compile Include="Setup\GeneralValues.cs" />
+    <Compile Include="Setup\Effects\HeartBeat.cs" />
+    <Compile Include="Setup\Effects\Stab.cs" />
+    <Compile Include="Setup\Effects\Wobble.cs" />
+    <Compile Include="TactFile.cs" />
+    <Compile Include="Weapons\ArmorBreaker.cs" />
+    <Compile Include="Weapons\Arrow.cs" />
+    <Compile Include="Weapons\Axe.cs" />
+    <Compile Include="Weapons\Boulder.cs" />
+    <Compile Include="Weapons\Bow.cs" />
+    <Compile Include="Weapons\Caestus\Claws.cs" />
+    <Compile Include="Weapons\Caestus\CrabClaws.cs" />
+    <Compile Include="Weapons\Caestus\Crossbow.cs" />
+    <Compile Include="Weapons\Caestus\GrapplingHook.cs" />
+    <Compile Include="Weapons\Caestus\IronFist.cs" />
+    <Compile Include="Weapons\Caestus\ThrowingKnife.cs" />
+    <Compile Include="Weapons\Caestus\Wings.cs" />
+    <Compile Include="Weapons\ChainBlade.cs" />
+    <Compile Include="Weapons\Fist.cs" />
+    <Compile Include="Weapons\GiantFlail.cs" />
+    <Compile Include="Weapons\Gladius.cs" />
+    <Compile Include="Weapons\Glaive.cs" />
+    <Compile Include="Weapons\GreatAxe.cs" />
+    <Compile Include="Weapons\GreatSword.cs" />
+    <Compile Include="Weapons\Gun.cs" />
+    <Compile Include="Weapons\Halberd.cs" />
+    <Compile Include="Weapons\Kitana.cs" />
+    <Compile Include="Setup\WeaponBase.cs" />
+    <Compile Include="Weapons\Mace.cs" />
+    <Compile Include="Weapons\Morningstar.cs" />
+    <Compile Include="Weapons\Nunchucks.cs" />
+    <Compile Include="Weapons\QuarterStaff.cs" />
+    <Compile Include="Weapons\Shield.cs" />
+    <Compile Include="Weapons\Spear.cs" />
+    <Compile Include="Weapons\SpikedRock.cs" />
+    <Compile Include="Weapons\Sword.cs" />
+    <Compile Include="Weapons\ThrowingShield.cs" />
+    <Compile Include="Weapons\Warhammer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Blunt_HandL.tact" />
+    <None Include="Resources\Blunt_HandR.tact" />
+    <None Include="Resources\Cut_HandL.tact" />
+    <None Include="Resources\Cut_HandR.tact" />
+    <None Include="Resources\DrawString_HandL.tact" />
+    <None Include="Resources\DrawString_HandR.tact" />
+    <None Include="Resources\HeartBeat_Head.tact" />
+    <None Include="Resources\HeartBeat_Vest.tact" />
+    <None Include="Resources\PlayerDamage_Head.tact" />
+    <None Include="Resources\PlayerDamage_Vest.tact" />
+    <None Include="Resources\ShootString_HandL.tact" />
+    <None Include="Resources\ShootString_HandR.tact" />
+    <None Include="Resources\Shoot_HandL.tact" />
+    <None Include="Resources\Shoot_HandR.tact" />
+    <None Include="Resources\Stab_HandL.tact" />
+    <None Include="Resources\Stab_HandR.tact" />
+    <None Include="Resources\Wobble_ArmL.tact" />
+    <None Include="Resources\Wobble_ArmR.tact" />
+    <None Include="Resources\Wobble_HandL.tact" />
+    <None Include="Resources\Wobble_HandR.tact" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
