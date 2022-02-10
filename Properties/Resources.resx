@@ -118,11 +118,23 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Blunt_ArmL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Blunt_ArmL.tact;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Blunt_ArmR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Blunt_ArmR.tact;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="Blunt_HandL" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Blunt_HandL.tact;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Blunt_HandR" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Blunt_HandR.tact;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Cut_ArmL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cut_ArmL.tact;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Cut_ArmR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cut_ArmR.tact;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Cut_HandL" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cut_HandL.tact;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

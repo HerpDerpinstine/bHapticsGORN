@@ -21,7 +21,7 @@ namespace GbHapticsIntegration.Setup.Effects
             internal bool Enabled = true;
             internal float Min = 0f;
             internal float Max = 2f;
-            internal float Multiplier = 0.00375f;
+            internal float Multiplier = 0.00575f;
         }
         internal I_Arm<I_GeneralValues, I_VelocityScalingValues2> ArmL;
         internal I_Arm<I_GeneralValues, I_VelocityScalingValues2> ArmR;
