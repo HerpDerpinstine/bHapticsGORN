@@ -11,7 +11,7 @@ namespace GbHapticsIntegration.Setup.Effects
             internal bool Enabled = true;
             internal float Min = 0f;
             internal float Max = 1f;
-            internal float Multiplier = 0.007f;
+            internal float Multiplier = 0.005f;
         }
         internal I_Hand<I_GeneralValues, I_VelocityScalingValues> HandL;
         internal I_Hand<I_GeneralValues, I_VelocityScalingValues> HandR;

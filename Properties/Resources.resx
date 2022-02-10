@@ -142,6 +142,12 @@
   <data name="Cut_HandR" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cut_HandR.tact;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="DrawString_ArmL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DrawString_ArmL.tact;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DrawString_ArmR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DrawString_ArmR.tact;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="DrawString_HandL" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DrawString_HandL.tact;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -160,17 +166,35 @@
   <data name="PlayerDamage_Vest" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PlayerDamage_Vest.tact;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="ShootString_ArmL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ShootString_ArmL.tact;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ShootString_ArmR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ShootString_ArmR.tact;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="ShootString_HandL" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ShootString_HandL.tact;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ShootString_HandR" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ShootString_HandR.tact;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="Shoot_ArmL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shoot_ArmL.tact;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Shoot_ArmR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shoot_ArmR.tact;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="Shoot_HandL" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Shoot_HandL.tact;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Shoot_HandR" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Shoot_HandR.tact;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Stab_ArmL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Stab_ArmL.tact;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Stab_ArmR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Stab_ArmR.tact;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Stab_HandL" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Stab_HandL.tact;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

@@ -133,6 +133,24 @@ namespace GbHapticsIntegration.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {&quot;project&quot;:{&quot;createdAt&quot;:1644528395896,&quot;description&quot;:&quot;&quot;,&quot;layout&quot;:{&quot;layouts&quot;:{&quot;ForearmL&quot;:[{&quot;index&quot;:0,&quot;x&quot;:0,&quot;y&quot;:0},{&quot;index&quot;:1,&quot;x&quot;:0.5,&quot;y&quot;:0},{&quot;index&quot;:2,&quot;x&quot;:1,&quot;y&quot;:0},{&quot;index&quot;:3,&quot;x&quot;:0,&quot;y&quot;:1},{&quot;index&quot;:4,&quot;x&quot;:0.5,&quot;y&quot;:1},{&quot;index&quot;:5,&quot;x&quot;:1,&quot;y&quot;:1}],&quot;ForearmR&quot;:[{&quot;index&quot;:0,&quot;x&quot;:0,&quot;y&quot;:0},{&quot;index&quot;:1,&quot;x&quot;:0.5,&quot;y&quot;:0},{&quot;index&quot;:2,&quot;x&quot;:1,&quot;y&quot;:0},{&quot;index&quot;:3,&quot;x&quot;:0,&quot;y&quot;:1},{&quot;index&quot;:4,&quot;x&quot;:0.5,&quot;y&quot;:1},{&quot;index&quot;:5,&quot;x&quot;:1,&quot;y&quot;:1}]},&quot;name&quot;:&quot;Tactosy2&quot;,&quot;type&quot;:&quot;Tactosy2&quot;},&quot;mediaFileDuration&quot;:3,&quot;name&quot;:&quot;DrawString_ArmL&quot;,&quot;tracks&quot;:[{&quot;e....
+        /// </summary>
+        internal static string DrawString_ArmL {
+            get {
+                return ResourceManager.GetString("DrawString_ArmL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {&quot;project&quot;:{&quot;createdAt&quot;:1644528479058,&quot;description&quot;:&quot;&quot;,&quot;id&quot;:&quot;-Mv_Xv3fZ78HDo1uZj0p&quot;,&quot;layout&quot;:{&quot;layouts&quot;:{&quot;ForearmL&quot;:[{&quot;index&quot;:0,&quot;x&quot;:0,&quot;y&quot;:0},{&quot;index&quot;:1,&quot;x&quot;:0.5,&quot;y&quot;:0},{&quot;index&quot;:2,&quot;x&quot;:1,&quot;y&quot;:0},{&quot;index&quot;:3,&quot;x&quot;:0,&quot;y&quot;:1},{&quot;index&quot;:4,&quot;x&quot;:0.5,&quot;y&quot;:1},{&quot;index&quot;:5,&quot;x&quot;:1,&quot;y&quot;:1}],&quot;ForearmR&quot;:[{&quot;index&quot;:0,&quot;x&quot;:0,&quot;y&quot;:0},{&quot;index&quot;:1,&quot;x&quot;:0.5,&quot;y&quot;:0},{&quot;index&quot;:2,&quot;x&quot;:1,&quot;y&quot;:0},{&quot;index&quot;:3,&quot;x&quot;:0,&quot;y&quot;:1},{&quot;index&quot;:4,&quot;x&quot;:0.5,&quot;y&quot;:1},{&quot;index&quot;:5,&quot;x&quot;:1,&quot;y&quot;:1}]},&quot;name&quot;:&quot;Tactosy2&quot;,&quot;type&quot;:&quot;Tactosy2&quot;},&quot;mediaFileDuration&quot;:3,&quot;name&quot;:&quot;Dr....
+        /// </summary>
+        internal static string DrawString_ArmR {
+            get {
+                return ResourceManager.GetString("DrawString_ArmR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to {&quot;project&quot;:{&quot;createdAt&quot;:1644431393154,&quot;description&quot;:&quot;&quot;,&quot;id&quot;:&quot;-MvUkZDsj3cOrDHJIZos&quot;,&quot;layout&quot;:{&quot;layouts&quot;:{&quot;HandL&quot;:[{&quot;index&quot;:0,&quot;x&quot;:0.5,&quot;y&quot;:0},{&quot;index&quot;:1,&quot;x&quot;:0.5,&quot;y&quot;:0.5},{&quot;index&quot;:2,&quot;x&quot;:0.5,&quot;y&quot;:1}],&quot;HandR&quot;:[{&quot;index&quot;:0,&quot;x&quot;:0.5,&quot;y&quot;:0},{&quot;index&quot;:1,&quot;x&quot;:0.5,&quot;y&quot;:0.5},{&quot;index&quot;:2,&quot;x&quot;:0.5,&quot;y&quot;:1}]},&quot;name&quot;:&quot;TactosyH&quot;,&quot;type&quot;:&quot;Hand&quot;},&quot;mediaFileDuration&quot;:3,&quot;name&quot;:&quot;DrawString_HandL&quot;,&quot;tracks&quot;:[{&quot;effects&quot;:[{&quot;modes&quot;:{&quot;HandL&quot;:{&quot;dotMode&quot;:{&quot;dotConnected&quot;:false,&quot;feedback&quot;:[{&quot;endTime&quot;:150,&quot;playbackType&quot;:&quot;NONE&quot;,&quot;pointList&quot;:[{&quot;index&quot;:0, [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string DrawString_HandL {
@@ -187,6 +205,24 @@ namespace GbHapticsIntegration.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {&quot;project&quot;:{&quot;createdAt&quot;:1644528576977,&quot;description&quot;:&quot;&quot;,&quot;layout&quot;:{&quot;layouts&quot;:{&quot;ForearmL&quot;:[{&quot;index&quot;:0,&quot;x&quot;:0,&quot;y&quot;:0},{&quot;index&quot;:1,&quot;x&quot;:0.5,&quot;y&quot;:0},{&quot;index&quot;:2,&quot;x&quot;:1,&quot;y&quot;:0},{&quot;index&quot;:3,&quot;x&quot;:0,&quot;y&quot;:1},{&quot;index&quot;:4,&quot;x&quot;:0.5,&quot;y&quot;:1},{&quot;index&quot;:5,&quot;x&quot;:1,&quot;y&quot;:1}],&quot;ForearmR&quot;:[{&quot;index&quot;:0,&quot;x&quot;:0,&quot;y&quot;:0},{&quot;index&quot;:1,&quot;x&quot;:0.5,&quot;y&quot;:0},{&quot;index&quot;:2,&quot;x&quot;:1,&quot;y&quot;:0},{&quot;index&quot;:3,&quot;x&quot;:0,&quot;y&quot;:1},{&quot;index&quot;:4,&quot;x&quot;:0.5,&quot;y&quot;:1},{&quot;index&quot;:5,&quot;x&quot;:1,&quot;y&quot;:1}]},&quot;name&quot;:&quot;Tactosy2&quot;,&quot;type&quot;:&quot;Tactosy2&quot;},&quot;mediaFileDuration&quot;:3,&quot;name&quot;:&quot;Shoot_ArmL&quot;,&quot;tracks&quot;:[{&quot;effect....
+        /// </summary>
+        internal static string Shoot_ArmL {
+            get {
+                return ResourceManager.GetString("Shoot_ArmL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {&quot;project&quot;:{&quot;createdAt&quot;:1644528586190,&quot;description&quot;:&quot;&quot;,&quot;id&quot;:&quot;-Mv_YKDbh04r74RPJGiN&quot;,&quot;layout&quot;:{&quot;layouts&quot;:{&quot;ForearmL&quot;:[{&quot;index&quot;:0,&quot;x&quot;:0,&quot;y&quot;:0},{&quot;index&quot;:1,&quot;x&quot;:0.5,&quot;y&quot;:0},{&quot;index&quot;:2,&quot;x&quot;:1,&quot;y&quot;:0},{&quot;index&quot;:3,&quot;x&quot;:0,&quot;y&quot;:1},{&quot;index&quot;:4,&quot;x&quot;:0.5,&quot;y&quot;:1},{&quot;index&quot;:5,&quot;x&quot;:1,&quot;y&quot;:1}],&quot;ForearmR&quot;:[{&quot;index&quot;:0,&quot;x&quot;:0,&quot;y&quot;:0},{&quot;index&quot;:1,&quot;x&quot;:0.5,&quot;y&quot;:0},{&quot;index&quot;:2,&quot;x&quot;:1,&quot;y&quot;:0},{&quot;index&quot;:3,&quot;x&quot;:0,&quot;y&quot;:1},{&quot;index&quot;:4,&quot;x&quot;:0.5,&quot;y&quot;:1},{&quot;index&quot;:5,&quot;x&quot;:1,&quot;y&quot;:1}]},&quot;name&quot;:&quot;Tactosy2&quot;,&quot;type&quot;:&quot;Tactosy2&quot;},&quot;mediaFileDuration&quot;:3,&quot;name&quot;:&quot;Sh....
+        /// </summary>
+        internal static string Shoot_ArmR {
+            get {
+                return ResourceManager.GetString("Shoot_ArmR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to {&quot;project&quot;:{&quot;createdAt&quot;:1644132364013,&quot;description&quot;:&quot;&quot;,&quot;id&quot;:&quot;-MvCvqLzAiLg99qX6yen&quot;,&quot;layout&quot;:{&quot;layouts&quot;:{&quot;HandL&quot;:[{&quot;index&quot;:0,&quot;x&quot;:0.5,&quot;y&quot;:0},{&quot;index&quot;:1,&quot;x&quot;:0.5,&quot;y&quot;:0.5},{&quot;index&quot;:2,&quot;x&quot;:0.5,&quot;y&quot;:1}],&quot;HandR&quot;:[{&quot;index&quot;:0,&quot;x&quot;:0.5,&quot;y&quot;:0},{&quot;index&quot;:1,&quot;x&quot;:0.5,&quot;y&quot;:0.5},{&quot;index&quot;:2,&quot;x&quot;:0.5,&quot;y&quot;:1}]},&quot;name&quot;:&quot;TactosyH&quot;,&quot;type&quot;:&quot;Hand&quot;},&quot;mediaFileDuration&quot;:3,&quot;name&quot;:&quot;Shoot_HandL&quot;,&quot;tracks&quot;:[{&quot;effects&quot;:[{&quot;modes&quot;:{&quot;HandL&quot;:{&quot;dotMode&quot;:{&quot;dotConnected&quot;:false,&quot;feedback&quot;:[]},&quot;mode&quot;:&quot;PATH_MODE&quot;,&quot;pathMode&quot;:{&quot;feedback&quot;:[{&quot;movingPattern&quot;:&quot;CO [rest of string was truncated]&qu....
         /// </summary>
         internal static string Shoot_HandL {
@@ -205,6 +241,24 @@ namespace GbHapticsIntegration.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {&quot;project&quot;:{&quot;createdAt&quot;:1644528667184,&quot;description&quot;:&quot;&quot;,&quot;layout&quot;:{&quot;layouts&quot;:{&quot;ForearmL&quot;:[{&quot;index&quot;:0,&quot;x&quot;:0,&quot;y&quot;:0},{&quot;index&quot;:1,&quot;x&quot;:0.5,&quot;y&quot;:0},{&quot;index&quot;:2,&quot;x&quot;:1,&quot;y&quot;:0},{&quot;index&quot;:3,&quot;x&quot;:0,&quot;y&quot;:1},{&quot;index&quot;:4,&quot;x&quot;:0.5,&quot;y&quot;:1},{&quot;index&quot;:5,&quot;x&quot;:1,&quot;y&quot;:1}],&quot;ForearmR&quot;:[{&quot;index&quot;:0,&quot;x&quot;:0,&quot;y&quot;:0},{&quot;index&quot;:1,&quot;x&quot;:0.5,&quot;y&quot;:0},{&quot;index&quot;:2,&quot;x&quot;:1,&quot;y&quot;:0},{&quot;index&quot;:3,&quot;x&quot;:0,&quot;y&quot;:1},{&quot;index&quot;:4,&quot;x&quot;:0.5,&quot;y&quot;:1},{&quot;index&quot;:5,&quot;x&quot;:1,&quot;y&quot;:1}]},&quot;name&quot;:&quot;Tactosy2&quot;,&quot;type&quot;:&quot;Tactosy2&quot;},&quot;mediaFileDuration&quot;:3,&quot;name&quot;:&quot;ShootString_ArmL&quot;,&quot;tracks&quot;:[{&quot;....
+        /// </summary>
+        internal static string ShootString_ArmL {
+            get {
+                return ResourceManager.GetString("ShootString_ArmL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {&quot;project&quot;:{&quot;createdAt&quot;:1644528678673,&quot;description&quot;:&quot;&quot;,&quot;id&quot;:&quot;-Mv_YfneJ3fpuqfaCmwr&quot;,&quot;layout&quot;:{&quot;layouts&quot;:{&quot;ForearmL&quot;:[{&quot;index&quot;:0,&quot;x&quot;:0,&quot;y&quot;:0},{&quot;index&quot;:1,&quot;x&quot;:0.5,&quot;y&quot;:0},{&quot;index&quot;:2,&quot;x&quot;:1,&quot;y&quot;:0},{&quot;index&quot;:3,&quot;x&quot;:0,&quot;y&quot;:1},{&quot;index&quot;:4,&quot;x&quot;:0.5,&quot;y&quot;:1},{&quot;index&quot;:5,&quot;x&quot;:1,&quot;y&quot;:1}],&quot;ForearmR&quot;:[{&quot;index&quot;:0,&quot;x&quot;:0,&quot;y&quot;:0},{&quot;index&quot;:1,&quot;x&quot;:0.5,&quot;y&quot;:0},{&quot;index&quot;:2,&quot;x&quot;:1,&quot;y&quot;:0},{&quot;index&quot;:3,&quot;x&quot;:0,&quot;y&quot;:1},{&quot;index&quot;:4,&quot;x&quot;:0.5,&quot;y&quot;:1},{&quot;index&quot;:5,&quot;x&quot;:1,&quot;y&quot;:1}]},&quot;name&quot;:&quot;Tactosy2&quot;,&quot;type&quot;:&quot;Tactosy2&quot;},&quot;mediaFileDuration&quot;:3,&quot;name&quot;:&quot;Sh....
+        /// </summary>
+        internal static string ShootString_ArmR {
+            get {
+                return ResourceManager.GetString("ShootString_ArmR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to {&quot;project&quot;:{&quot;createdAt&quot;:1644131842843,&quot;description&quot;:&quot;&quot;,&quot;id&quot;:&quot;-MvCtr6lxJnQQ5K2sTdb&quot;,&quot;layout&quot;:{&quot;layouts&quot;:{&quot;HandL&quot;:[{&quot;index&quot;:0,&quot;x&quot;:0.5,&quot;y&quot;:0},{&quot;index&quot;:1,&quot;x&quot;:0.5,&quot;y&quot;:0.5},{&quot;index&quot;:2,&quot;x&quot;:0.5,&quot;y&quot;:1}],&quot;HandR&quot;:[{&quot;index&quot;:0,&quot;x&quot;:0.5,&quot;y&quot;:0},{&quot;index&quot;:1,&quot;x&quot;:0.5,&quot;y&quot;:0.5},{&quot;index&quot;:2,&quot;x&quot;:0.5,&quot;y&quot;:1}]},&quot;name&quot;:&quot;TactosyH&quot;,&quot;type&quot;:&quot;Hand&quot;},&quot;mediaFileDuration&quot;:3,&quot;name&quot;:&quot;ShootString_HandL&quot;,&quot;tracks&quot;:[{&quot;effects&quot;:[{&quot;modes&quot;:{&quot;HandL&quot;:{&quot;dotMode&quot;:{&quot;dotConnected&quot;:false,&quot;feedback&quot;:[]},&quot;mode&quot;:&quot;PATH_MODE&quot;,&quot;pathMode&quot;:{&quot;feedback&quot;:[{&quot;movingPatter [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string ShootString_HandL {
@@ -219,6 +273,24 @@ namespace GbHapticsIntegration.Properties {
         internal static string ShootString_HandR {
             get {
                 return ResourceManager.GetString("ShootString_HandR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {&quot;project&quot;:{&quot;createdAt&quot;:1644528781799,&quot;description&quot;:&quot;&quot;,&quot;layout&quot;:{&quot;layouts&quot;:{&quot;ForearmL&quot;:[{&quot;index&quot;:0,&quot;x&quot;:0,&quot;y&quot;:0},{&quot;index&quot;:1,&quot;x&quot;:0.5,&quot;y&quot;:0},{&quot;index&quot;:2,&quot;x&quot;:1,&quot;y&quot;:0},{&quot;index&quot;:3,&quot;x&quot;:0,&quot;y&quot;:1},{&quot;index&quot;:4,&quot;x&quot;:0.5,&quot;y&quot;:1},{&quot;index&quot;:5,&quot;x&quot;:1,&quot;y&quot;:1}],&quot;ForearmR&quot;:[{&quot;index&quot;:0,&quot;x&quot;:0,&quot;y&quot;:0},{&quot;index&quot;:1,&quot;x&quot;:0.5,&quot;y&quot;:0},{&quot;index&quot;:2,&quot;x&quot;:1,&quot;y&quot;:0},{&quot;index&quot;:3,&quot;x&quot;:0,&quot;y&quot;:1},{&quot;index&quot;:4,&quot;x&quot;:0.5,&quot;y&quot;:1},{&quot;index&quot;:5,&quot;x&quot;:1,&quot;y&quot;:1}]},&quot;name&quot;:&quot;Tactosy2&quot;,&quot;type&quot;:&quot;Tactosy2&quot;},&quot;mediaFileDuration&quot;:3,&quot;name&quot;:&quot;Stab_ArmL&quot;,&quot;tracks&quot;:[{&quot;effects....
+        /// </summary>
+        internal static string Stab_ArmL {
+            get {
+                return ResourceManager.GetString("Stab_ArmL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {&quot;project&quot;:{&quot;createdAt&quot;:1644528788984,&quot;description&quot;:&quot;&quot;,&quot;id&quot;:&quot;-Mv_Z5jHHU9muaR9oikt&quot;,&quot;layout&quot;:{&quot;layouts&quot;:{&quot;ForearmL&quot;:[{&quot;index&quot;:0,&quot;x&quot;:0,&quot;y&quot;:0},{&quot;index&quot;:1,&quot;x&quot;:0.5,&quot;y&quot;:0},{&quot;index&quot;:2,&quot;x&quot;:1,&quot;y&quot;:0},{&quot;index&quot;:3,&quot;x&quot;:0,&quot;y&quot;:1},{&quot;index&quot;:4,&quot;x&quot;:0.5,&quot;y&quot;:1},{&quot;index&quot;:5,&quot;x&quot;:1,&quot;y&quot;:1}],&quot;ForearmR&quot;:[{&quot;index&quot;:0,&quot;x&quot;:0,&quot;y&quot;:0},{&quot;index&quot;:1,&quot;x&quot;:0.5,&quot;y&quot;:0},{&quot;index&quot;:2,&quot;x&quot;:1,&quot;y&quot;:0},{&quot;index&quot;:3,&quot;x&quot;:0,&quot;y&quot;:1},{&quot;index&quot;:4,&quot;x&quot;:0.5,&quot;y&quot;:1},{&quot;index&quot;:5,&quot;x&quot;:1,&quot;y&quot;:1}]},&quot;name&quot;:&quot;Tactosy2&quot;,&quot;type&quot;:&quot;Tactosy2&quot;},&quot;mediaFileDuration&quot;:3,&quot;name&quot;:&quot;St....
+        /// </summary>
+        internal static string Stab_ArmR {
+            get {
+                return ResourceManager.GetString("Stab_ArmR", resourceCulture);
             }
         }
         
