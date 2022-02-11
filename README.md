@@ -57,11 +57,11 @@ For example if you wanted to replace the ``HeartBeat`` you would rename it to ``
 ### VELOCITY SCALING:
 
 - The Algorithm for Velocity Scaling works as follows:  
-``PatternIntensity * ( ClampMinMax( ( ImpactVelocity.magnitude * VelocityScale ), VelocityScaleMin, VelocityScaleMax  ) * IntensityScale )``
+``PatternIntensity * ( ClampMinMax( ( CurrentVelocity.magnitude * VelocityScale ), VelocityScaleMin, VelocityScaleMax  ) * IntensityScale )``
 
 - For example if:  
 1) ``PatternIntensity`` equals ``100``  
-2) ``ImpactVelocity.magnitude`` equals ``256``  
+2) ``CurrentVelocity.magnitude`` equals ``256``  
 3) ``VelocityScale`` equals ``0.001``  
 4) ``VelocityScaleMin`` equals ``0``  
 5) ``VelocityScaleMax`` equals ``2``  
