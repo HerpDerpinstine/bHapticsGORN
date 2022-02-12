@@ -169,6 +169,15 @@ namespace GbHapticsIntegration.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {&quot;project&quot;:{&quot;createdAt&quot;:1644694503763,&quot;description&quot;:&quot;&quot;,&quot;id&quot;:&quot;-MvjRI7HcpM22kmPd__e&quot;,&quot;layout&quot;:{&quot;layouts&quot;:{&quot;VestBack&quot;:[{&quot;index&quot;:0,&quot;x&quot;:0,&quot;y&quot;:0},{&quot;index&quot;:1,&quot;x&quot;:0.333,&quot;y&quot;:0},{&quot;index&quot;:2,&quot;x&quot;:0.667,&quot;y&quot;:0},{&quot;index&quot;:3,&quot;x&quot;:1,&quot;y&quot;:0},{&quot;index&quot;:4,&quot;x&quot;:0,&quot;y&quot;:0.25},{&quot;index&quot;:5,&quot;x&quot;:0.333,&quot;y&quot;:0.25},{&quot;index&quot;:6,&quot;x&quot;:0.667,&quot;y&quot;:0.25},{&quot;index&quot;:7,&quot;x&quot;:1,&quot;y&quot;:0.25},{&quot;index&quot;:8,&quot;x&quot;:0,&quot;y&quot;:0.5},{&quot;index&quot;:9,&quot;x&quot;:0.333,&quot;y&quot;:0.5},{&quot;index&quot;:10,&quot;x&quot;:0.667,&quot;y&quot;:0.5},{&quot;index&quot;:11,&quot;x&quot;:1,&quot;y&quot;:0.5},{&quot;index&quot;:12,&quot;x&quot;:0,&quot;y&quot;:0.75},{&quot;index&quot;:13,&quot;x&quot;:0.333,&quot;y&quot;:0.75},{....
+        /// </summary>
+        internal static string Gong_Vest {
+            get {
+                return ResourceManager.GetString("Gong_Vest", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to {&quot;project&quot;:{&quot;createdAt&quot;:1633055521031,&quot;description&quot;:&quot;&quot;,&quot;id&quot;:&quot;-MktgaXODQFjyUzZUlpv&quot;,&quot;layout&quot;:{&quot;layouts&quot;:{&quot;Head&quot;:[{&quot;index&quot;:0,&quot;x&quot;:0,&quot;y&quot;:0.5},{&quot;index&quot;:1,&quot;x&quot;:0.2,&quot;y&quot;:0.5},{&quot;index&quot;:2,&quot;x&quot;:0.4,&quot;y&quot;:0.5},{&quot;index&quot;:3,&quot;x&quot;:0.6,&quot;y&quot;:0.5},{&quot;index&quot;:4,&quot;x&quot;:0.8,&quot;y&quot;:0.5},{&quot;index&quot;:5,&quot;x&quot;:1,&quot;y&quot;:0.5}]},&quot;name&quot;:&quot;Tactal&quot;,&quot;type&quot;:&quot;Tactal&quot;},&quot;mediaFileDuration&quot;:3,&quot;name&quot;:&quot;HeartBeat_Head&quot;,&quot;tracks&quot;:[{&quot;effects&quot;:[{&quot;modes&quot;:{&quot;Head&quot;:{&quot;dotMode&quot;:{&quot;dotConnected&quot;:false,&quot;feedback&quot;:[{&quot;endTime&quot;:88,&quot;playbackType&quot;:&quot;NONE&quot;,&quot;startTime&quot;:0,&quot;pointList&quot;:[]},{&quot;end [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string HeartBeat_Head {

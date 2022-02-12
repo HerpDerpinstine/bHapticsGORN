@@ -154,6 +154,9 @@
   <data name="DrawString_HandR" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DrawString_HandR.tact;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="Gong_Vest" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Gong_Vest.tact;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="HeartBeat_Head" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\HeartBeat_Head.tact;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
