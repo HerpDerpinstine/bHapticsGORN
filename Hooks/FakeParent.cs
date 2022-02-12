@@ -15,9 +15,13 @@ namespace GbHapticsIntegration.Hooks
                 AccessTools.Method(typeof(H_FakeParent), "Update_Prefix").ToNewHarmonyMethod());
         }
 
+        private static GameObject damageRelayGameObject;
         private static bool Update_Prefix(FakeParent __instance)
         {
-            if (__instance.transform.parent != GameController.Player.damageRelay.transform.parent)
+            if (damageRelayGameObject == null)
+                damageRelayGameObject = GameController.Player?.damageRelay?.gameObject;
+            if ((damageRelayGameObject == null)
+                || (__instance.transform.gameObject != damageRelayGameObject))
                 return true;
 
             PlayerFakeParent newparent = __instance.transform.gameObject.AddComponent<PlayerFakeParent>();

@@ -6,6 +6,8 @@ namespace GbHapticsIntegration.Setup
 	{
 		private void Update()
 		{
+			if (fakeParentTo == null)
+				return;
 			transform.position = fakeParentTo.position;
 			transform.eulerAngles = new Vector3(0, fakeParentTo.eulerAngles.y, 0);
 		}
