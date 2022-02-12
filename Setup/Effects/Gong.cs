@@ -15,31 +15,32 @@ namespace GbHapticsIntegration.Setup.Effects
 			Vest = new I_Vest<CM_Intensity2>("Player", className);
 		}
 
-		internal void PlaySoft()
+		internal enum Strength
+        {
+			Hard,
+			Medium,
+			Soft
+        }
+		internal void Play(Strength strength)
 		{
 			if (!Config.HapticEffects.Gong)
 				return;
 
 			if (Vest.IsEnabled())
-				Vest.Play();
-		}
-
-		internal void PlayMedium()
-		{
-			if (!Config.HapticEffects.Gong)
-				return;
-
-			if (Vest.IsEnabled())
-				Vest.Play();
-		}
-
-		internal void PlayHard()
-		{
-			if (!Config.HapticEffects.Gong)
-				return;
-
-			if (Vest.IsEnabled())
-				Vest.Play();
+			{
+				switch (strength)
+                {
+					case Strength.Soft:
+						Vest.Play(new bHaptics.ScaleOption(Vest.General.IntensityScale_Soft));
+						break;
+					case Strength.Medium:
+						Vest.Play(new bHaptics.ScaleOption(Vest.General.IntensityScale_Medium));
+						break;
+					default:
+						Vest.Play(new bHaptics.ScaleOption(Vest.General.IntensityScale_Hard));
+						break;
+				}
+			}
 		}
 
 		internal override bool IsPlaying(bHaptics.PositionType positionType)

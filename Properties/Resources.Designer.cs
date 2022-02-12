@@ -187,6 +187,15 @@ namespace GbHapticsIntegration.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {&quot;project&quot;:{&quot;createdAt&quot;:1644646045503,&quot;description&quot;:&quot;&quot;,&quot;id&quot;:&quot;-MvgYRN4TqsyD_Ba81N2&quot;,&quot;layout&quot;:{&quot;layouts&quot;:{&quot;VestBack&quot;:[{&quot;index&quot;:0,&quot;x&quot;:0,&quot;y&quot;:0},{&quot;index&quot;:1,&quot;x&quot;:0.333,&quot;y&quot;:0},{&quot;index&quot;:2,&quot;x&quot;:0.667,&quot;y&quot;:0},{&quot;index&quot;:3,&quot;x&quot;:1,&quot;y&quot;:0},{&quot;index&quot;:4,&quot;x&quot;:0,&quot;y&quot;:0.25},{&quot;index&quot;:5,&quot;x&quot;:0.333,&quot;y&quot;:0.25},{&quot;index&quot;:6,&quot;x&quot;:0.667,&quot;y&quot;:0.25},{&quot;index&quot;:7,&quot;x&quot;:1,&quot;y&quot;:0.25},{&quot;index&quot;:8,&quot;x&quot;:0,&quot;y&quot;:0.5},{&quot;index&quot;:9,&quot;x&quot;:0.333,&quot;y&quot;:0.5},{&quot;index&quot;:10,&quot;x&quot;:0.667,&quot;y&quot;:0.5},{&quot;index&quot;:11,&quot;x&quot;:1,&quot;y&quot;:0.5},{&quot;index&quot;:12,&quot;x&quot;:0,&quot;y&quot;:0.75},{&quot;index&quot;:13,&quot;x&quot;:0.333,&quot;y&quot;:0.75},{....
+        /// </summary>
+        internal static string PlayerDamage_Arrow_Vest {
+            get {
+                return ResourceManager.GetString("PlayerDamage_Arrow_Vest", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to {&quot;project&quot;:{&quot;createdAt&quot;:1633259061591,&quot;description&quot;:&quot;&quot;,&quot;id&quot;:&quot;-Ml4p0QufMlpzeLQySgn&quot;,&quot;layout&quot;:{&quot;layouts&quot;:{&quot;Head&quot;:[{&quot;index&quot;:0,&quot;x&quot;:0,&quot;y&quot;:0.5},{&quot;index&quot;:1,&quot;x&quot;:0.2,&quot;y&quot;:0.5},{&quot;index&quot;:2,&quot;x&quot;:0.4,&quot;y&quot;:0.5},{&quot;index&quot;:3,&quot;x&quot;:0.6,&quot;y&quot;:0.5},{&quot;index&quot;:4,&quot;x&quot;:0.8,&quot;y&quot;:0.5},{&quot;index&quot;:5,&quot;x&quot;:1,&quot;y&quot;:0.5}]},&quot;name&quot;:&quot;Tactal&quot;,&quot;type&quot;:&quot;Tactal&quot;},&quot;mediaFileDuration&quot;:3,&quot;name&quot;:&quot;PlayerDamage_Head&quot;,&quot;tracks&quot;:[{&quot;effects&quot;:[{&quot;modes&quot;:{&quot;Head&quot;:{&quot;dotMode&quot;:{&quot;dotConnected&quot;:false,&quot;feedback&quot;:[]},&quot;mode&quot;:&quot;PATH_MODE&quot;,&quot;pathMode&quot;:{&quot;feedback&quot;:[{&quot;movingPattern&quot;:&quot;CONS [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string PlayerDamage_Head {
@@ -309,6 +318,15 @@ namespace GbHapticsIntegration.Properties {
         internal static string Stab_HandR {
             get {
                 return ResourceManager.GetString("Stab_HandR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {&quot;project&quot;:{&quot;createdAt&quot;:1644644519398,&quot;description&quot;:&quot;&quot;,&quot;layout&quot;:{&quot;layouts&quot;:{&quot;VestBack&quot;:[{&quot;index&quot;:0,&quot;x&quot;:0,&quot;y&quot;:0},{&quot;index&quot;:1,&quot;x&quot;:0.333,&quot;y&quot;:0},{&quot;index&quot;:2,&quot;x&quot;:0.667,&quot;y&quot;:0},{&quot;index&quot;:3,&quot;x&quot;:1,&quot;y&quot;:0},{&quot;index&quot;:4,&quot;x&quot;:0,&quot;y&quot;:0.25},{&quot;index&quot;:5,&quot;x&quot;:0.333,&quot;y&quot;:0.25},{&quot;index&quot;:6,&quot;x&quot;:0.667,&quot;y&quot;:0.25},{&quot;index&quot;:7,&quot;x&quot;:1,&quot;y&quot;:0.25},{&quot;index&quot;:8,&quot;x&quot;:0,&quot;y&quot;:0.5},{&quot;index&quot;:9,&quot;x&quot;:0.333,&quot;y&quot;:0.5},{&quot;index&quot;:10,&quot;x&quot;:0.667,&quot;y&quot;:0.5},{&quot;index&quot;:11,&quot;x&quot;:1,&quot;y&quot;:0.5},{&quot;index&quot;:12,&quot;x&quot;:0,&quot;y&quot;:0.75},{&quot;index&quot;:13,&quot;x&quot;:0.333,&quot;y&quot;:0.75},{&quot;index&quot;:14,&quot;x&quot;:0.667,&quot;y....
+        /// </summary>
+        internal static string Surprise_Vest {
+            get {
+                return ResourceManager.GetString("Surprise_Vest", resourceCulture);
             }
         }
         

@@ -70,6 +70,7 @@
     <Compile Include="Hooks\Bow.cs" />
     <Compile Include="Hooks\CrossbowCaestus.cs" />
     <Compile Include="Hooks\DamagerRigidbody.cs" />
+    <Compile Include="Hooks\FakeParent.cs" />
     <Compile Include="Hooks\Gong.cs" />
     <Compile Include="Hooks\Grapple.cs" />
     <Compile Include="Hooks\Gun.cs" />
@@ -105,6 +106,7 @@
     <Compile Include="Setup\Devices\Head.cs" />
     <Compile Include="Setup\Effects\DrawString.cs" />
     <Compile Include="Setup\Effects\Gong.cs" />
+    <Compile Include="Setup\Effects\PlayerDamage_Arrow.cs" />
     <Compile Include="Setup\Effects\PlayerDamage.cs" />
     <Compile Include="Setup\Effects\Shoot.cs" />
     <Compile Include="Setup\Effects\ShootString.cs" />
@@ -116,6 +118,7 @@
     <Compile Include="Setup\ConfigModels\Intensity2.cs" />
     <Compile Include="Setup\ConfigModels\Toggle.cs" />
     <Compile Include="Setup\ConfigModels\Velocity.cs" />
+    <Compile Include="Setup\PlayerFakeParent.cs" />
     <Compile Include="TactFile.cs" />
     <Compile Include="Setup\Weapons\ArmorBreaker.cs" />
     <Compile Include="Setup\Weapons\Arrow.cs" />
@@ -172,6 +175,7 @@
     <None Include="Resources\DrawString_HandR.tact" />
     <None Include="Resources\HeartBeat_Head.tact" />
     <None Include="Resources\HeartBeat_Vest.tact" />
+    <None Include="Resources\PlayerDamage_Arrow_Vest.tact" />
     <None Include="Resources\PlayerDamage_Head.tact" />
     <None Include="Resources\PlayerDamage_Vest.tact" />
     <None Include="Resources\ShootString_ArmL.tact" />
@@ -186,6 +190,7 @@
     <None Include="Resources\Stab_ArmR.tact" />
     <None Include="Resources\Stab_HandL.tact" />
     <None Include="Resources\Stab_HandR.tact" />
+    <None Include="Resources\Surprise_Vest.tact" />
     <None Include="Resources\Wobble_ArmL.tact" />
     <None Include="Resources\Wobble_ArmR.tact" />
     <None Include="Resources\Wobble_HandL.tact" />

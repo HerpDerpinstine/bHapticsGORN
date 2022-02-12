@@ -12,17 +12,20 @@ namespace GbHapticsIntegration.Managers
         internal static Dictionary<CaestusType, I_WeaponBase> WeaponsByCaestusType = new Dictionary<CaestusType, I_WeaponBase>();
         internal static E_HeartBeat heartBeat;
         internal static W_Fist fist;
-        internal static E_PlayerDamage playerDamage;
         internal static E_Surprise surprise;
         internal static E_Gong gong;
+        internal static E_PlayerDamage playerDamage;
+        internal static E_PlayerDamage_Arrow playerDamage_Arrow;
 
         internal static void Setup()
         {
             heartBeat = new E_HeartBeat();
             fist = new W_Fist();
-            playerDamage = new E_PlayerDamage();
             surprise = new E_Surprise();
             gong = new E_Gong();
+
+            playerDamage = new E_PlayerDamage();
+            playerDamage_Arrow = new E_PlayerDamage_Arrow();
 
             // Normal
             new W_ArmorBreaker();

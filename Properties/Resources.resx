@@ -160,6 +160,9 @@
   <data name="HeartBeat_Vest" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\HeartBeat_Vest.tact;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="PlayerDamage_Arrow_Vest" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PlayerDamage_Arrow_Vest.tact;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="PlayerDamage_Head" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PlayerDamage_Head.tact;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -201,6 +204,9 @@
   </data>
   <data name="Stab_HandR" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Stab_HandR.tact;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Surprise_Vest" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Surprise_Vest.tact;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Wobble_ArmL" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Wobble_ArmL.tact;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

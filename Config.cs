@@ -46,6 +46,7 @@ namespace GbHapticsIntegration
 			internal bool Gong = true;
 			internal bool HeartBeat = true;
 			internal bool PlayerDamage = true;
+			internal bool PlayerDamage_Arrow = true;
 			internal bool Shoot = true;
 			internal bool ShootString = true;
 			internal bool Stab = true;

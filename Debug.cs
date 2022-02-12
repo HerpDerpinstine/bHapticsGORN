@@ -25,6 +25,7 @@ namespace GbHapticsIntegration
         {
             if (!Config_Register)
                 return;
+
             GbHapticsIntegration.Logger.Msg($"Registered ReflectiveCategory [{identifier}] to [{filepath}]");
         }
 
@@ -32,6 +33,7 @@ namespace GbHapticsIntegration
         {
             if (!TactFile_Register)
                 return;
+
             GbHapticsIntegration.Logger.Msg($"Registered bHaptics Pattern [{identifier}] from {(is_file ? $"TactFile [{filepath}]" : "Default Resources")}");
         }
 
@@ -39,6 +41,7 @@ namespace GbHapticsIntegration
         {
             if (!TactFile_Playback)
                 return;
+
             GbHapticsIntegration.Logger.Msg($"Submitted bHaptics Pattern [{identifier}]   |   Scale:  [{((scaleOption == null) ? 1f : scaleOption.Intensity)}] / [{((scaleOption == null) ? 1f : scaleOption.Duration)}]   |   Rotation:  [{((rotationOption == null) ? 1f : rotationOption.OffsetX)}] / [{((rotationOption == null) ? 1f : rotationOption.OffsetY)}]");
         }
 #endif
@@ -91,6 +94,7 @@ namespace GbHapticsIntegration
                 GbHapticsIntegration.Logger.Error($"Failed to Find Method {identifier}!");
                 return;
             }
+
             GbHapticsIntegration.Logger.Msg($"Found Method {identifier}!");
         }
 
@@ -109,6 +113,7 @@ namespace GbHapticsIntegration
         {
             if (!Damage_Fist)
                 return;
+
             GbHapticsIntegration.Logger.Msg($"OnFistDamage\n" +
                 $"is_left = {is_left}\n" +
                 $"caestusType = {Enum.GetName(typeof(CaestusType), caestusType)}\n" +
@@ -119,6 +124,7 @@ namespace GbHapticsIntegration
         {
             if (!Damage_Weapon)
                 return;
+
             GbHapticsIntegration.Logger.Msg($"OnWeaponDamage\n" +
                 $"is_left = {is_left}\n" +
                 $"weaponType = {Enum.GetName(typeof(WeaponType), weaponType)}\n" +

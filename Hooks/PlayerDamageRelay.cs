@@ -99,7 +99,16 @@ namespace GbHapticsIntegration.Hooks
                 return;
 
             // Play
-            M_Tact.playerDamage.Play(pos, (collision.relativeVelocity - H_DamageRelay.DamagerRigidbody_velocity(damager)));
+            Vector3 velocity = collision.relativeVelocity - H_DamageRelay.DamagerRigidbody_velocity(damager);
+            switch (damageType)
+            {
+                case DamageType.Arrow:
+                    M_Tact.playerDamage_Arrow.Play(pos, velocity);
+                    break;
+                default:
+                    M_Tact.playerDamage.Play(pos, velocity);
+                    break;
+            }
         }
     }
 }
