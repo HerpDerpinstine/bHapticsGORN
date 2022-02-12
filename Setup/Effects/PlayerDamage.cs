@@ -3,25 +3,25 @@ using MelonLoader;
 using GbHapticsIntegration.Setup.Devices;
 using GbHapticsIntegration.Managers;
 using GbHapticsIntegration.Setup.ConfigModels;
+using Tomlet.Attributes;
 
 namespace GbHapticsIntegration.Setup.Effects
 {
 	internal class E_PlayerDamage : I_EffectBase
 	{
-		internal class I_VelocityScalingValues
+		[TomlDoNotInlineObject]
+		internal class CM_VelocityNew : CM_Velocity
 		{
-			internal bool Enabled = true;
-			internal float Min = 0f;
-			internal float Max = 2f;
-			internal float Multiplier = 0.01f;
+			public CM_VelocityNew()
+				=> Multiplier = 0.01f;
 		}
-		internal I_Vest<CM_Intensity, I_VelocityScalingValues> Vest;
+		internal I_Vest<CM_Intensity, CM_VelocityNew> Vest;
 
 		internal E_PlayerDamage()
 		{
 			string className = "PlayerDamage";
 
-			Vest = new I_Vest<CM_Intensity, I_VelocityScalingValues>("Player", className);
+			Vest = new I_Vest<CM_Intensity, CM_VelocityNew>("Player", className);
 		}
 
 		internal void Play(Vector3 contactPos, Vector3 velocity)
@@ -53,10 +53,6 @@ namespace GbHapticsIntegration.Setup.Effects
 					collider.bounds.size.y));
 			}
 		}
-
-
-		private bHaptics.ScaleOption GetScaleOption(float magnitude, I_VelocityScalingValues velocityScalingValues)
-			=> GetScaleOption(magnitude, velocityScalingValues.Enabled, velocityScalingValues.Multiplier, velocityScalingValues.Min, velocityScalingValues.Max);
 
 		internal override bool IsPlaying(bHaptics.PositionType positionType)
 		{
