@@ -13,12 +13,14 @@ namespace GbHapticsIntegration.Managers
         internal static E_HeartBeat heartBeat;
         internal static W_Fist fist;
         internal static E_PlayerDamage playerDamage;
+        internal static E_Surprise surprise;
 
         internal static void Setup()
         {
             heartBeat = new E_HeartBeat();
             fist = new W_Fist();
             playerDamage = new E_PlayerDamage();
+            surprise = new E_Surprise();
 
             // Normal
             new W_ArmorBreaker();

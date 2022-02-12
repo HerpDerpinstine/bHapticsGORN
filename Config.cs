@@ -48,6 +48,7 @@ namespace GbHapticsIntegration
 			internal bool Shoot = true;
 			internal bool ShootString = true;
 			internal bool Stab = true;
+			internal bool Surprise = true;
 			internal bool Wobble = true;
 		}
 

@@ -105,6 +105,7 @@
     <Compile Include="Setup\Effects\PlayerDamage.cs" />
     <Compile Include="Setup\Effects\Shoot.cs" />
     <Compile Include="Setup\Effects\ShootString.cs" />
+    <Compile Include="Setup\Effects\Surprise.cs" />
     <Compile Include="Setup\GeneralValues.cs" />
     <Compile Include="Setup\Effects\HeartBeat.cs" />
     <Compile Include="Setup\Effects\Stab.cs" />
