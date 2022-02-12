@@ -1,8 +1,5 @@
-﻿using System.Collections.Generic;
-using System.Reflection.Emit;
-using HarmonyLib;
+﻿using HarmonyLib;
 using GbHapticsIntegration.Managers;
-using System.Reflection;
 using MelonLoader;
 
 namespace GbHapticsIntegration.Hooks
@@ -24,7 +21,9 @@ namespace GbHapticsIntegration.Hooks
 
         private static void SpawnSurprise_Prefix(SurpriseBox __instance)
         {
-
+            if (SurpriseBox_haveSpawned(__instance))
+                return;
+            M_Tact.surprise.Play();
         }
     }
 }
