@@ -10,8 +10,8 @@ Special Thanks to [bHaptics](https://www.bhaptics.com) for making the bHaptics G
 | Features |
 | - |
 | Wobble |
+| Surprise |
 | HeartBeat |
-| SurpriseBox |
 | Reactive Player Damage |
 | Velocity Based Haptic Scaling |
 | Custom Haptic Pattern Support |
