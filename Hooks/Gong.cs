@@ -17,21 +17,21 @@ namespace GbHapticsIntegration.Hooks
             Debug.LogPatchInit("Gong.RingInternal");
             GbHapticsIntegration.ModHarmony.Patch(AccessTools.Method(Type_Gong, "RingInternal"),
                 null,
-                AccessTools.Method(typeof(H_Gong), "RingInternal_PostFix").ToNewHarmonyMethod());
+                AccessTools.Method(typeof(H_Gong), "PlayHard").ToNewHarmonyMethod());
 
-            /*
             Debug.LogPatchInit("Gong.OnCollisionEnter");
             GbHapticsIntegration.ModHarmony.Patch(AccessTools.Method(Type_Gong, "OnCollisionEnter"),
                 null,
                 null,
                 AccessTools.Method(typeof(H_Gong), "OnCollisionEnter_Transpiler").ToNewHarmonyMethod());
-            */
         }
 
-        private static void Play(E_Gong.Strength strength)
+        private static void PlaySoft()
+            => M_Tact.gong.Play(E_Gong.Strength.Soft);
+        private static void PlayMedium()
+            => M_Tact.gong.Play(E_Gong.Strength.Medium);
+        private static void PlayHard()
             => M_Tact.gong.Play(E_Gong.Strength.Hard);
-        private static void RingInternal_PostFix()
-            => Play(E_Gong.Strength.Hard);
 
         private static IEnumerable<CodeInstruction> OnCollisionEnter_Transpiler(IEnumerable<CodeInstruction> instructions)
         {
@@ -43,11 +43,11 @@ namespace GbHapticsIntegration.Hooks
                     && !string.IsNullOrEmpty((string)inst.operand))
                 {
                     if (((string)inst.operand).Equals("GongSoft"))
-                        newinstructions.Add(CodeInstruction.Call(() => Play(E_Gong.Strength.Soft)));
+                        newinstructions.Add(CodeInstruction.Call(() => PlaySoft()));
                     else if (((string)inst.operand).Equals("GongMed"))
-                        newinstructions.Add(CodeInstruction.Call(() => Play(E_Gong.Strength.Medium)));
+                        newinstructions.Add(CodeInstruction.Call(() => PlayMedium()));
                     else if (((string)inst.operand).Equals("GongHard"))
-                        newinstructions.Add(CodeInstruction.Call(() => Play(E_Gong.Strength.Hard)));
+                        newinstructions.Add(CodeInstruction.Call(() => PlayHard()));
                 }
                 newinstructions.Add(inst);
             }

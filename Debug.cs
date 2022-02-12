@@ -8,10 +8,10 @@ namespace GbHapticsIntegration
     internal static class Debug
     {
 #if DEBUG
-        private static bool Config_Register = true;
+        private static bool Config_Register = false;
         internal static bool Config_Load = false;
         internal static bool Config_PrintMsg = false;
-        private static bool TactFile_Register = true;
+        private static bool TactFile_Register = false;
         private static bool TactFile_Playback = true;
         private static bool FieldRef_Get = true;
         private static bool FieldRef_Found = true;
