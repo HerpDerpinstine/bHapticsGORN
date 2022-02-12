@@ -1,6 +1,6 @@
 ﻿using GbHapticsIntegration.Setup.Devices;
 using MelonLoader;
-using UnityEngine;
+using GbHapticsIntegration.Setup.ConfigModels;
 
 namespace GbHapticsIntegration.Setup.Effects
 {
@@ -13,8 +13,8 @@ namespace GbHapticsIntegration.Setup.Effects
             internal float Max = 2f;
             internal float Multiplier = 0.0065f;
         }
-        internal I_Hand<I_GeneralValues, I_VelocityScalingValues> HandL;
-        internal I_Hand<I_GeneralValues, I_VelocityScalingValues> HandR;
+        internal I_Hand<CM_Intensity, I_VelocityScalingValues> HandL;
+        internal I_Hand<CM_Intensity, I_VelocityScalingValues> HandR;
 
         internal class I_VelocityScalingValues2
         {
@@ -23,17 +23,17 @@ namespace GbHapticsIntegration.Setup.Effects
             internal float Max = 2f;
             internal float Multiplier = 0.00325f;
         }
-        internal I_Arm<I_GeneralValues, I_VelocityScalingValues2> ArmL;
-        internal I_Arm<I_GeneralValues, I_VelocityScalingValues2> ArmR;
+        internal I_Arm<CM_Intensity, I_VelocityScalingValues2> ArmL;
+        internal I_Arm<CM_Intensity, I_VelocityScalingValues2> ArmR;
 
         internal E_DrawString(I_WeaponBase weaponBase, string basefolder) : base(weaponBase)
         {
             string className = "DrawString";
 
-            HandL = new I_Hand<I_GeneralValues, I_VelocityScalingValues>(true, basefolder, className);
-            HandR = new I_Hand<I_GeneralValues, I_VelocityScalingValues>(false, basefolder, className);
-            ArmL = new I_Arm<I_GeneralValues, I_VelocityScalingValues2>(true, basefolder, className);
-            ArmR = new I_Arm<I_GeneralValues, I_VelocityScalingValues2>(false, basefolder, className);
+            HandL = new I_Hand<CM_Intensity, I_VelocityScalingValues>(true, basefolder, className);
+            HandR = new I_Hand<CM_Intensity, I_VelocityScalingValues>(false, basefolder, className);
+            ArmL = new I_Arm<CM_Intensity, I_VelocityScalingValues2>(true, basefolder, className);
+            ArmR = new I_Arm<CM_Intensity, I_VelocityScalingValues2>(false, basefolder, className);
         }
 
         internal void Play(float magnitude, bool is_left)

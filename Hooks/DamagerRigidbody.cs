@@ -4,6 +4,7 @@ using System.Reflection;
 using System.Reflection.Emit;
 using GbHapticsIntegration.Managers;
 using HarmonyLib;
+using MelonLoader;
 using UnityEngine;
 
 namespace GbHapticsIntegration.Hooks
@@ -28,9 +29,9 @@ namespace GbHapticsIntegration.Hooks
 
             Debug.LogPatchInit("DamagerRigidbody.OnCollisionEnter");
             GbHapticsIntegration.ModHarmony.Patch(AccessTools.Method(Type_DamagerRigidbody, "OnCollisionEnter"),
-                new HarmonyMethod(AccessTools.Method(typeof(H_DamagerRigidbody), "OnCollisionEnter_Prefix")),
-                new HarmonyMethod(AccessTools.Method(typeof(H_DamagerRigidbody), "OnCollisionEnter_PostFix")),
-                new HarmonyMethod(AccessTools.Method(typeof(H_DamagerRigidbody), "OnCollisionEnter_Transpiler")));
+                AccessTools.Method(typeof(H_DamagerRigidbody), "OnCollisionEnter_Prefix").ToNewHarmonyMethod(),
+                AccessTools.Method(typeof(H_DamagerRigidbody), "OnCollisionEnter_PostFix").ToNewHarmonyMethod(),
+                AccessTools.Method(typeof(H_DamagerRigidbody), "OnCollisionEnter_Transpiler").ToNewHarmonyMethod());
         }
         
         private static Dictionary<DamagerRigidbody, bool> was_damaging = new Dictionary<DamagerRigidbody, bool>();

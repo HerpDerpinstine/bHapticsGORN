@@ -5,6 +5,7 @@ using HarmonyLib;
 using GbHapticsIntegration.Managers;
 using System.Reflection;
 using UnityEngine;
+using MelonLoader;
 
 namespace GbHapticsIntegration.Hooks
 {
@@ -24,13 +25,13 @@ namespace GbHapticsIntegration.Hooks
             GbHapticsIntegration.ModHarmony.Patch(AccessTools.Method(Type_PlayerDamageRelay, "Update"), 
                 null,
                 null,
-                new HarmonyMethod(AccessTools.Method(typeof(H_PlayerDamageRelay), "Update_Transpiler")));
+                AccessTools.Method(typeof(H_PlayerDamageRelay), "Update_Transpiler").ToNewHarmonyMethod());
 
             Debug.LogPatchInit("PlayerDamageRelay.Damage");
             GbHapticsIntegration.ModHarmony.Patch(AccessTools.Method(Type_PlayerDamageRelay, "Damage"),
                 null,
                 null,
-                new HarmonyMethod(AccessTools.Method(typeof(H_PlayerDamageRelay), "Damage_Transpiler")));
+                AccessTools.Method(typeof(H_PlayerDamageRelay), "Damage_Transpiler").ToNewHarmonyMethod());
         }
 
         private static IEnumerable<CodeInstruction> Update_Transpiler(IEnumerable<CodeInstruction> instructions)

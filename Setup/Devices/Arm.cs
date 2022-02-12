@@ -1,10 +1,10 @@
 ﻿using System.IO;
-using MelonLoader;
 using MelonLoader.Preferences;
+using GbHapticsIntegration.Setup.ConfigModels;
 
 namespace GbHapticsIntegration.Setup.Devices
 {
-    internal class I_Arm<T> : TactFile where T : I_GeneralValues, new()
+    internal class I_Arm<T> : TactFile where T : CM_Toggle, new()
     {
         private bool IsLeft;
         private MelonPreferences_ReflectiveCategory GeneralCategory;

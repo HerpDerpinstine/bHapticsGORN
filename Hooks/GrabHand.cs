@@ -3,6 +3,7 @@ using HarmonyLib;
 using UnityEngine;
 using GbHapticsIntegration.Managers;
 using System.Reflection;
+using MelonLoader;
 
 namespace GbHapticsIntegration.Hooks
 {
@@ -21,7 +22,7 @@ namespace GbHapticsIntegration.Hooks
             Debug.LogPatchInit("GrabHand.FixedUpdate");
             GbHapticsIntegration.ModHarmony.Patch(AccessTools.Method(Type_GrabHand, "FixedUpdate"),
                 null,
-                new HarmonyMethod(AccessTools.Method(typeof(H_GrabHand), "FixedUpdate_Postfix")));
+                AccessTools.Method(typeof(H_GrabHand), "FixedUpdate_Postfix").ToNewHarmonyMethod());
         }
 
         private static void FixedUpdate_Postfix(GrabHand __instance)

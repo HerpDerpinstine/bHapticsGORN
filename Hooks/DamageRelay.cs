@@ -3,6 +3,7 @@ using HarmonyLib;
 using UnityEngine;
 using GbHapticsIntegration.Managers;
 using System.Reflection;
+using MelonLoader;
 
 namespace GbHapticsIntegration.Hooks
 {
@@ -23,7 +24,7 @@ namespace GbHapticsIntegration.Hooks
             DamageRelay_Damage = AccessTools.Method(Type_DamageRelay, "Damage");
             GbHapticsIntegration.ModHarmony.Patch(DamageRelay_Damage,
                 null,
-                new HarmonyMethod(AccessTools.Method(Type_DamageRelay_Hook, "Damage_Postfix")));
+                AccessTools.Method(Type_DamageRelay_Hook, "Damage_Postfix").ToNewHarmonyMethod());
         }
 
         private static void Damage_Postfix(DamageRelay __instance,

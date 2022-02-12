@@ -1,20 +1,21 @@
 ﻿using GbHapticsIntegration.Setup.Devices;
 using GbHapticsIntegration.Managers;
 using MelonLoader;
+using GbHapticsIntegration.Setup.ConfigModels;
 
 namespace GbHapticsIntegration.Setup.Effects
 {
 	internal class E_HeartBeat : I_EffectBase
 	{
-		internal I_Head<I_GeneralValues> Head;
-		internal I_Vest<I_GeneralValues> Vest;
+		internal I_Head<CM_Intensity> Head;
+		internal I_Vest<CM_Intensity> Vest;
 
 		internal E_HeartBeat()
 		{
 			string className = "HeartBeat";
 
-			Head = new I_Head<I_GeneralValues>("Player", className);
-			Vest = new I_Vest<I_GeneralValues>("Player", className);
+			Head = new I_Head<CM_Intensity>("Player", className);
+			Vest = new I_Vest<CM_Intensity>("Player", className);
 		}
 
 		internal void Play()

@@ -1,5 +1,6 @@
 ﻿using MelonLoader;
 using UnityEngine;
+using GbHapticsIntegration.Setup.ConfigModels;
 
 namespace GbHapticsIntegration.Setup
 {
@@ -11,6 +12,8 @@ namespace GbHapticsIntegration.Setup
         internal I_EffectBase(I_WeaponBase weaponBase)
             => WeaponBase = weaponBase;
 
+        internal bHaptics.ScaleOption GetScaleOption(float magnitude, CM_Velocity velocityScalingValues)
+            => GetScaleOption(magnitude, velocityScalingValues.Enabled, velocityScalingValues.Multiplier, velocityScalingValues.Min, velocityScalingValues.Max);
         internal bHaptics.ScaleOption GetScaleOption(float magnitude, bool enabled, float multiplier, float min, float max)
         {
             if (!enabled)

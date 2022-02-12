@@ -70,6 +70,7 @@
     <Compile Include="Hooks\Bow.cs" />
     <Compile Include="Hooks\CrossbowCaestus.cs" />
     <Compile Include="Hooks\DamagerRigidbody.cs" />
+    <Compile Include="Hooks\Gong.cs" />
     <Compile Include="Hooks\Grapple.cs" />
     <Compile Include="Hooks\Gun.cs" />
     <Compile Include="Hooks\SurpriseBox.cs" />
@@ -108,10 +109,13 @@
     <Compile Include="Setup\Effects\Shoot.cs" />
     <Compile Include="Setup\Effects\ShootString.cs" />
     <Compile Include="Setup\Effects\Surprise.cs" />
-    <Compile Include="Setup\GeneralValues.cs" />
+    <Compile Include="Setup\ConfigModels\Intensity.cs" />
     <Compile Include="Setup\Effects\HeartBeat.cs" />
     <Compile Include="Setup\Effects\Stab.cs" />
     <Compile Include="Setup\Effects\Wobble.cs" />
+    <Compile Include="Setup\ConfigModels\Intensity2.cs" />
+    <Compile Include="Setup\ConfigModels\Toggle.cs" />
+    <Compile Include="Setup\ConfigModels\Velocity.cs" />
     <Compile Include="TactFile.cs" />
     <Compile Include="Setup\Weapons\ArmorBreaker.cs" />
     <Compile Include="Setup\Weapons\Arrow.cs" />

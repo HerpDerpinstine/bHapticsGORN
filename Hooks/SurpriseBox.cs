@@ -3,42 +3,28 @@ using System.Reflection.Emit;
 using HarmonyLib;
 using GbHapticsIntegration.Managers;
 using System.Reflection;
+using MelonLoader;
 
 namespace GbHapticsIntegration.Hooks
 {
     internal static class H_SurpriseBox
     {
-        private static MethodInfo GameController_SpawnSurpriseBoxItem = null;
+        private static AccessTools.FieldRef<SurpriseBox, bool> SurpriseBox_haveSpawned = null;
 
         internal static void Initialize()
         {
-            Debug.LogMethodGet("GameController.SpawnSurpriseBoxItem");
-            GameController_SpawnSurpriseBoxItem = AccessTools.Method(typeof(GameController), "SpawnSurpriseBoxItem");
-            Debug.LogMethodFound("GameController.SpawnSurpriseBoxItem", GameController_SpawnSurpriseBoxItem);
+            Debug.LogFieldRefGet("SurpriseBox.haveSpawned");
+            SurpriseBox_haveSpawned = AccessTools.FieldRefAccess<SurpriseBox, bool>("haveSpawned");
+            Debug.LogFieldRefFound("SurpriseBox.haveSpawned", SurpriseBox_haveSpawned);
 
             Debug.LogPatchInit("SurpriseBox.SpawnSurprise");
             GbHapticsIntegration.ModHarmony.Patch(AccessTools.Method(typeof(SurpriseBox), "SpawnSurprise"),
-                null,
-                null,
-                new HarmonyMethod(AccessTools.Method(typeof(H_SurpriseBox), "SpawnSurprise_Transpiler")));
+                AccessTools.Method(typeof(H_SurpriseBox), "SpawnSurprise_Prefix").ToNewHarmonyMethod());
         }
 
-        private static IEnumerable<CodeInstruction> SpawnSurprise_Transpiler(IEnumerable<CodeInstruction> instructions)
+        private static void SpawnSurprise_Prefix(SurpriseBox __instance)
         {
-            List<CodeInstruction> newinstructions = new List<CodeInstruction>();
-            foreach (CodeInstruction inst in instructions)
-            {
-                if ((inst.opcode == OpCodes.Ldstr)
-                    && (inst.operand != null)
-                    && (inst.opcode == OpCodes.Call)
-                    && ((MethodInfo)inst.operand) == GameController_SpawnSurpriseBoxItem)
-                {
-                    Debug.LogPatchInit("GameController.SpawnSurpriseBoxItem Call");
-                    newinstructions.Add(CodeInstruction.Call(() => M_Tact.surprise.Play()));
-                }
-                newinstructions.Add(inst);
-            }
-            return newinstructions;
+
         }
     }
 }

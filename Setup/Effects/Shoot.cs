@@ -1,23 +1,24 @@
 ﻿using GbHapticsIntegration.Setup.Devices;
 using MelonLoader;
+using GbHapticsIntegration.Setup.ConfigModels;
 
 namespace GbHapticsIntegration.Setup.Effects
 {
     internal class E_Shoot : I_EffectBase
     {
-        internal I_Hand<I_GeneralValues> HandL;
-        internal I_Hand<I_GeneralValues> HandR;
-        internal I_Arm<I_GeneralValues> ArmL;
-        internal I_Arm<I_GeneralValues> ArmR;
+        internal I_Hand<CM_Intensity> HandL;
+        internal I_Hand<CM_Intensity> HandR;
+        internal I_Arm<CM_Intensity> ArmL;
+        internal I_Arm<CM_Intensity> ArmR;
 
         internal E_Shoot(I_WeaponBase weaponBase, string basefolder) : base(weaponBase)
         {
             string className = "Shoot";
 
-            HandL = new I_Hand<I_GeneralValues>(true, basefolder, className);
-            HandR = new I_Hand<I_GeneralValues>(false, basefolder, className);
-            ArmL = new I_Arm<I_GeneralValues>(true, basefolder, className);
-            ArmR = new I_Arm<I_GeneralValues>(false, basefolder, className);
+            HandL = new I_Hand<CM_Intensity>(true, basefolder, className);
+            HandR = new I_Hand<CM_Intensity>(false, basefolder, className);
+            ArmL = new I_Arm<CM_Intensity>(true, basefolder, className);
+            ArmR = new I_Arm<CM_Intensity>(false, basefolder, className);
         }
 
         internal void Play(bool is_left)

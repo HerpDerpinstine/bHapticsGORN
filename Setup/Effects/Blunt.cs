@@ -1,39 +1,33 @@
 ﻿using GbHapticsIntegration.Setup.Devices;
+using GbHapticsIntegration.Setup.ConfigModels;
 using MelonLoader;
+using Tomlet.Attributes;
 using UnityEngine;
 
 namespace GbHapticsIntegration.Setup.Effects
 {
     internal class E_Blunt : I_EffectBase
     {
-        internal class I_VelocityScalingValues
-        {
-            internal bool Enabled = true;
-            internal float Min = 0f;
-            internal float Max = 2f;
-            internal float Multiplier = 0.005f;
-        }
-        internal I_Hand<I_GeneralValues, I_VelocityScalingValues> HandL;
-        internal I_Hand<I_GeneralValues, I_VelocityScalingValues> HandR;
+        internal I_Hand<CM_Intensity, CM_Velocity> HandL;
+        internal I_Hand<CM_Intensity, CM_Velocity> HandR;
 
-        internal class I_VelocityScalingValues2
+        [TomlDoNotInlineObject]
+        internal class CM_VelocityNew : CM_Velocity
         {
-            internal bool Enabled = true;
-            internal float Min = 0f;
-            internal float Max = 2f;
-            internal float Multiplier = 0.003f;
+            public CM_VelocityNew()
+                => Multiplier = 0.003f;
         }
-        internal I_Arm<I_GeneralValues, I_VelocityScalingValues2> ArmL;
-        internal I_Arm<I_GeneralValues, I_VelocityScalingValues2> ArmR;
+        internal I_Arm<CM_Intensity, CM_VelocityNew> ArmL;
+        internal I_Arm<CM_Intensity, CM_VelocityNew> ArmR;
 
         internal E_Blunt(I_WeaponBase weaponBase, string basefolder) : base(weaponBase)
         {
             string className = "Blunt";
 
-            HandL = new I_Hand<I_GeneralValues, I_VelocityScalingValues>(true, basefolder, className);
-            HandR = new I_Hand<I_GeneralValues, I_VelocityScalingValues>(false, basefolder, className);
-            ArmL = new I_Arm<I_GeneralValues, I_VelocityScalingValues2>(true, basefolder, className);
-            ArmR = new I_Arm<I_GeneralValues, I_VelocityScalingValues2>(false, basefolder, className);
+            HandL = new I_Hand<CM_Intensity, CM_Velocity>(true, basefolder, className);
+            HandR = new I_Hand<CM_Intensity, CM_Velocity>(false, basefolder, className);
+            ArmL = new I_Arm<CM_Intensity, CM_VelocityNew>(true, basefolder, className);
+            ArmR = new I_Arm<CM_Intensity, CM_VelocityNew>(false, basefolder, className);
         }
 
         internal void Play(Vector3 velocity, bool is_left)
@@ -90,11 +84,6 @@ namespace GbHapticsIntegration.Setup.Effects
                 ArmR.Play(scaleOption);
             }
         }
-
-        private bHaptics.ScaleOption GetScaleOption(float magnitude, I_VelocityScalingValues velocityScalingValues)
-            => GetScaleOption(magnitude, velocityScalingValues.Enabled, velocityScalingValues.Multiplier, velocityScalingValues.Min, velocityScalingValues.Max);
-        private bHaptics.ScaleOption GetScaleOption(float magnitude, I_VelocityScalingValues2 velocityScalingValues)
-            => GetScaleOption(magnitude, velocityScalingValues.Enabled, velocityScalingValues.Multiplier, velocityScalingValues.Min, velocityScalingValues.Max);
 
         internal override bool IsPlaying(bHaptics.PositionType positionType)
         {
