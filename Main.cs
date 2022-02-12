@@ -32,6 +32,7 @@ namespace GbHapticsIntegration
             H_Grapple.Initialize();
             H_Gun.Initialize();
             H_PlayerDamageRelay.Initialize();
+            H_SurpriseBox.Initialize();
 
             Logger.Msg("Initialized!");
         }

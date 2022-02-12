@@ -72,6 +72,7 @@
     <Compile Include="Hooks\DamagerRigidbody.cs" />
     <Compile Include="Hooks\Grapple.cs" />
     <Compile Include="Hooks\Gun.cs" />
+    <Compile Include="Hooks\SurpriseBox.cs" />
     <Compile Include="Managers\Tact.cs" />
     <Compile Include="Setup\Devices\Head2.cs" />
     <Compile Include="Setup\Devices\Vest.cs" />
