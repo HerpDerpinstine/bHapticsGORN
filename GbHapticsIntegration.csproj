@@ -70,6 +70,7 @@
     <Compile Include="Hooks\Bow.cs" />
     <Compile Include="Hooks\CrossbowCaestus.cs" />
     <Compile Include="Hooks\DamagerRigidbody.cs" />
+    <Compile Include="Hooks\GameController.cs" />
     <Compile Include="Hooks\Grapple.cs" />
     <Compile Include="Hooks\Gun.cs" />
     <Compile Include="Managers\Tact.cs" />
