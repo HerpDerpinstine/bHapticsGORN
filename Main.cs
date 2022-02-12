@@ -28,7 +28,6 @@ namespace GbHapticsIntegration
             H_CrossbowCaestus.Initialize();
             H_DamageRelay.Initialize();
             H_DamagerRigidbody.Initialize();
-            H_GameController.Initialize();
             H_GrabHand.Initialize();
             H_Grapple.Initialize();
             H_Gun.Initialize();

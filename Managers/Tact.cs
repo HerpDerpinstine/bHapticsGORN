@@ -14,6 +14,7 @@ namespace GbHapticsIntegration.Managers
         internal static W_Fist fist;
         internal static E_PlayerDamage playerDamage;
         internal static E_Surprise surprise;
+        internal static E_Gong gong;
 
         internal static void Setup()
         {
@@ -21,6 +22,7 @@ namespace GbHapticsIntegration.Managers
             fist = new W_Fist();
             playerDamage = new E_PlayerDamage();
             surprise = new E_Surprise();
+            gong = new E_Gong();
 
             // Normal
             new W_ArmorBreaker();

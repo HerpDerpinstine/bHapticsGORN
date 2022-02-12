@@ -70,7 +70,6 @@
     <Compile Include="Hooks\Bow.cs" />
     <Compile Include="Hooks\CrossbowCaestus.cs" />
     <Compile Include="Hooks\DamagerRigidbody.cs" />
-    <Compile Include="Hooks\GameController.cs" />
     <Compile Include="Hooks\Grapple.cs" />
     <Compile Include="Hooks\Gun.cs" />
     <Compile Include="Managers\Tact.cs" />
@@ -103,6 +102,7 @@
     </Compile>
     <Compile Include="Setup\Devices\Head.cs" />
     <Compile Include="Setup\Effects\DrawString.cs" />
+    <Compile Include="Setup\Effects\Gong.cs" />
     <Compile Include="Setup\Effects\PlayerDamage.cs" />
     <Compile Include="Setup\Effects\Shoot.cs" />
     <Compile Include="Setup\Effects\ShootString.cs" />
