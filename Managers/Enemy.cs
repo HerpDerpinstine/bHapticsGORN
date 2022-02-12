@@ -12,7 +12,9 @@ namespace GbHapticsIntegration.Managers
 
         internal static void OnFistDamage(Fist fist, Vector3 velocity, DamageType damageType)
         {
+#if DEBUG
             Debug.LogDamageFist(fist.caestusType, damageType, fist.left);
+#endif
 
             switch (damageType)
             {
@@ -55,7 +57,9 @@ namespace GbHapticsIntegration.Managers
                     return;
             }
 
+#if DEBUG
             Debug.LogDamageWeapon(weaponType, damageType, fist.left);
+#endif
 
             switch (damageType)
             {

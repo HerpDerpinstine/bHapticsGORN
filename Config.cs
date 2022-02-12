@@ -68,10 +68,16 @@ namespace GbHapticsIntegration
 				string FilePath = Path.Combine(FolderPath, $"{fileName}.cfg");
 
 				category = MelonPreferences.CreateCategory<T>(categoryName);
+#if DEBUG
 				category.SetFilePath(FilePath, Debug.Config_Load, Debug.Config_PrintMsg);
+#else
+				category.SetFilePath(FilePath, true, false);
+#endif
 				category.SaveToFile(false);
 
+#if DEBUG
 				Debug.LogConfigRegister(categoryName, FilePath);
+#endif
 			}
 			return category.GetValue<T>();
 		}

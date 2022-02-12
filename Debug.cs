@@ -1,5 +1,7 @@
-﻿using System;
+﻿#if DEBUG
+using System;
 using MelonLoader;
+#endif
 
 namespace GbHapticsIntegration
 {
@@ -13,21 +15,11 @@ namespace GbHapticsIntegration
         private static bool TactFile_Playback = true;
         private static bool FieldRef_Get = true;
         private static bool FieldRef_Found = true;
+        private static bool Method_Get = true;
+        private static bool Method_Found = true;
         private static bool Patch_Init = true;
         private static bool Damage_Fist = false;
         private static bool Damage_Weapon = false;
-#else
-        private static bool Config_Register = false;
-        internal static bool Config_Load = true;
-        internal static bool Config_PrintMsg = false;
-        private static bool TactFile_Register = false;
-        private static bool TactFile_Playback = false;
-        private static bool FieldRef_Get = true;
-        private static bool FieldRef_Found = true;
-        private static bool Patch_Init = true;
-        private static bool Damage_Fist = false;
-        private static bool Damage_Weapon = false;
-#endif
 
         internal static void LogConfigRegister(string identifier, string filepath)
         {
@@ -49,37 +41,51 @@ namespace GbHapticsIntegration
                 return;
             GbHapticsIntegration.Logger.Msg($"Submitted bHaptics Pattern [{identifier}]   |   Scale:  [{((scaleOption == null) ? 1f : scaleOption.Intensity)}] / [{((scaleOption == null) ? 1f : scaleOption.Duration)}]   |   Rotation:  [{((rotationOption == null) ? 1f : rotationOption.OffsetX)}] / [{((rotationOption == null) ? 1f : rotationOption.OffsetY)}]");
         }
+#endif
 
         internal static void LogFieldRefGet(string identifier)
         {
+#if DEBUG
             if (!FieldRef_Get)
                 return;
+#endif
+
             GbHapticsIntegration.Logger.Msg($"Getting FieldRef {identifier}...");
         }
 
         internal static void LogFieldRefFound(string identifier, object obj)
         {
+#if DEBUG
             if (!FieldRef_Found)
                 return;
+#endif
+
             if (obj == null)
             {
                 GbHapticsIntegration.Logger.Error($"Failed to Find FieldRef {identifier}!");
                 return;
             }
+
             GbHapticsIntegration.Logger.Msg($"Found FieldRef {identifier}!");
         }
 
         internal static void LogMethodGet(string identifier)
         {
-            if (!FieldRef_Get)
+#if DEBUG
+            if (!Method_Get)
                 return;
+#endif
+
             GbHapticsIntegration.Logger.Msg($"Getting Method {identifier}...");
         }
 
         internal static void LogMethodFound(string identifier, object obj)
         {
-            if (!FieldRef_Found)
+#if DEBUG
+            if (!Method_Found)
                 return;
+#endif
+
             if (obj == null)
             {
                 GbHapticsIntegration.Logger.Error($"Failed to Find Method {identifier}!");
@@ -90,11 +96,15 @@ namespace GbHapticsIntegration
 
         internal static void LogPatchInit(string identifier)
         {
+#if DEBUG
             if (!Patch_Init)
                 return;
+#endif
+
             GbHapticsIntegration.Logger.Msg($"Patching Method {identifier}...");
         }
 
+#if DEBUG
         internal static void LogDamageFist(CaestusType caestusType, DamageType damageType, bool is_left)
         {
             if (!Damage_Fist)
@@ -114,5 +124,6 @@ namespace GbHapticsIntegration
                 $"weaponType = {Enum.GetName(typeof(WeaponType), weaponType)}\n" +
                 $"damageType = {Enum.GetName(typeof(DamageType), damageType)}");
         }
+#endif
     }
 }

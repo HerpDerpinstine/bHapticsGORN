@@ -19,7 +19,9 @@ namespace GbHapticsIntegration
             string filepath = Path.Combine(FolderPath, filename);
             try
             {
+#if DEBUG
                 bool is_file = true;
+#endif
                 string json = null;
                 if (File.Exists(filepath))
                 {
@@ -29,14 +31,19 @@ namespace GbHapticsIntegration
                 }
                 else
                 {
+#if DEBUG
                     is_file = false;
+#endif
                     json = Properties.Resources.ResourceManager.GetString(DefaultResourcesName);
                     if (string.IsNullOrEmpty(json))
                         throw new Exception($"Failed to Read Default JSON ({DefaultResourcesName}) from Resources!");
                 }
 
                 bHaptics.RegisterFeedbackFromTactFile(Identifier, json);
+
+#if DEBUG
                 Debug.LogTactFileRegister(Identifier, filepath, is_file);
+#endif
             }
             catch (Exception ex)
             {
@@ -51,7 +58,10 @@ namespace GbHapticsIntegration
         internal void Play(bHaptics.ScaleOption scaleOption, bHaptics.RotationOption rotationOption)
         {
             bHaptics.SubmitRegistered(Identifier, Identifier, scaleOption, rotationOption);
+
+#if DEBUG
             Debug.LogTactFilePlayback(Identifier, scaleOption, rotationOption);
+#endif
         }
 
         internal bool IsPlaying()
