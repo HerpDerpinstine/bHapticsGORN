@@ -18,7 +18,7 @@ namespace GbHapticsIntegration.Hooks
                 null,
                 AccessTools.Method(typeof(H_Gong), "RingInternal_PostFix").ToNewHarmonyMethod());
 
-            Debug.LogPatchInit("Gong.RingInternal");
+            Debug.LogPatchInit("Gong.OnCollisionEnter");
             GbHapticsIntegration.ModHarmony.Patch(AccessTools.Method(Type_Gong, "OnCollisionEnter"),
                 null,
                 null,
