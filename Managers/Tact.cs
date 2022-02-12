@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using GbHapticsIntegration.Setup;
 using GbHapticsIntegration.Setup.Effects;
-using GbHapticsIntegration.Weapons;
-using GbHapticsIntegration.Weapons.Caestus;
+using GbHapticsIntegration.Setup.Weapons;
+using GbHapticsIntegration.Setup.Weapons.Caestus;
 
 namespace GbHapticsIntegration.Managers
 {
