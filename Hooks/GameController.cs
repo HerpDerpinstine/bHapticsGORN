@@ -15,6 +15,7 @@ namespace GbHapticsIntegration.Hooks
             Debug.LogPatchInit("GameController.SpawnPlayerWeapons");
             GbHapticsIntegration.ModHarmony.Patch(
                 AccessTools.Method(Type_GameController, "SpawnPlayerWeapons"),
+                null,
                 AccessTools.Method(Type_Patch_GameController, "SpawnPlayerWeapons_PostFix").ToNewHarmonyMethod());
         }
 
