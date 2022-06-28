@@ -1,5 +1,5 @@
 
-# GbHapticsIntegration
+# bHapticsGORN
 Mod for GORN using MelonLoader  
 Special Thanks to [bHaptics](https://www.bhaptics.com) for making the bHaptics Gear as well as supporting me and this mod wherever needed! :D
 
@@ -36,7 +36,7 @@ Special Thanks to [bHaptics](https://www.bhaptics.com) for making the bHaptics G
 ### INSTALLATION:
 
 1) Install [MelonLoader](https://github.com/LavaGang/MelonLoader/releases) v0.5.3 or higher.
-2) Download [GbHapticsIntegration](https://github.com/HerpDerpinstine/GbHapticsIntegration/releases) from Releases.
+2) Download [bHapticsGORN](https://github.com/HerpDerpinstine/bHapticsGORN/releases) from Releases.
 3) Place ``GbHapticsIntegration.dll`` in your ``Mods`` folder.
 4) Start the Game.
 
@@ -83,4 +83,4 @@ For example if you wanted to replace the ``HeartBeat`` you would rename it to ``
 
 ### LICENSING & CREDITS:
 
-GbHapticsIntegration is licensed under the Apache License, Version 2.0. See [LICENSE](https://github.com/HerpDerpinstine/GbHapticsIntegration/blob/master/LICENSE.md) for the full License.
+bHapticsGORN is licensed under the Apache License, Version 2.0. See [LICENSE](https://github.com/HerpDerpinstine/bHapticsGORN/blob/master/LICENSE.md) for the full License.
