@@ -37,7 +37,7 @@ Special Thanks to [bHaptics](https://www.bhaptics.com) for making the bHaptics G
 
 1) Install [MelonLoader](https://github.com/LavaGang/MelonLoader/releases) v0.5.3 or higher.
 2) Download [bHapticsGORN](https://github.com/HerpDerpinstine/bHapticsGORN/releases) from Releases.
-3) Place ``GbHapticsIntegration.dll`` in your ``Mods`` folder.
+3) Place ``bHapticsGORN.dll`` in your ``Mods`` folder.
 4) Start the Game.
 
 ---
